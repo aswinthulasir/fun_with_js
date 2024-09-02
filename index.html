@@ -9,10 +9,12 @@
     <meta name="keywords" content="relevant, keywords, here">
     <meta name="author" content="Your Name">
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    
-    <h1 id="Helloo">Hello World </h1>
+    <a href="except.html">hello</a>
+    <!-- <h1 id="Helloo">Hello World </h1>
     <p id="par"></p>
 
     <h2 id="Scripting"></h2>
@@ -33,9 +35,30 @@
 
     <input type="text" id="myInput" onkeypress="key_press(event)">
 
-    <button type="submit" id="MyButton" onclick="clickosky()" style="padding: 20px; background-color: lightblue; color: white; font-size: 24px; cursor: pointer;">Click Here</button>
+    <button type="submit" id="MyButton" onclick="clickosky()" style="padding: 20px; background-color: lightblue; color: white; font-size: 24px; cursor: pointer;">Click Here</button> -->
+
+
+    <form style="font-size: 24px; text-align: center; padding: 30px; margin-top: 50px;" onsubmit="return validateForm()">
+        <div class="mb-5" style="padding: 40px 25px; ">
+          <label for="exampleInputEmail1" class="form-label" >Email address</label>
+          <input type="text" class="form-control" id="email_in" aria-describedby="emailHelp" style="padding: 20px 15px; background-color: aquamarine; font-size: 24px;">
+          <div id="emailHelp" class="form-text"></div>
+          <span id="err_e"></span>
+        </div>
+        <div class="mb-5" style="padding: 40px 25px; ">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password_in"  style="padding: 20px 15px; background-color: aquamarine; font-size: 24px;">
+          <span id="err_p"></span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="padding: 24px 44px; font-size: 20px;">Submit</button>
+      </form>
+
+
+      
 
     <script src="script.js"></script> 
+    <script src="app.js"></script>
 </body>
 </html>
 

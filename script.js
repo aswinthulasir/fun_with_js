@@ -47,6 +47,7 @@ function clickosky() {
 
 function mouse_over(){
     document.getElementById('newP').style.color='blue';
+    document.getElementById('newP').style.cursor='pointer';
 }
 function mouse_leave(){
     document.getElementById('newP').style.color='red';
@@ -63,3 +64,7 @@ function key_press(event){
 // })
 
 document.getElementById('myInput').addEventListener('keypress', function key_press(event){console.log(event.target.value)})
+// keypress= event name
+
+
+
